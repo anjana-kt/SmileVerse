@@ -14,13 +14,14 @@ If the memes are mindblowing to the users and feels like rewarding them, then th
 SmileVerse is built using Next js framework as the very base of this Dapp. The smart contracts are based on Ethereum blockchain written in Solidity. The contracts are tested and deployed using Hardhat Ethereum development environment. It was deployed in localhost and later to Polygon Testnet.
 
 ## How to run
-add dependencies
+add dependencies : 
 `yarn add ethers hardhat @nomiclabs/hardhat-waffle ethereum-waffle chai @nomiclabs/hardhat-ethers web3modal @openzeppelin/contracts ipfs-http-client axios` 
 
-deploy the contracts
-`npx hardhat run scripts/deploy.js --network localhost``
+deploy the contracts : 
+`npx hardhat run scripts/deploy.js --network localhost`
 
-command for starting or restarting your server:
+command for starting or restarting blockchain server :
 `npx hardhat node`
 
+to run : 
 `npm run dev`
