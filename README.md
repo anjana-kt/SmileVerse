@@ -1,5 +1,21 @@
 ## SmileVerse
 
+## How to run
+add dependencies : 
+`yarn add ethers hardhat @nomiclabs/hardhat-waffle ethereum-waffle chai @nomiclabs/hardhat-ethers web3modal @openzeppelin/contracts ipfs-http-client axios` 
+
+command for starting or restarting blockchain server :
+`npx hardhat node`
+
+command to deploy in localhost : 
+`npx hardhat run scripts/deploy.js --network localhost`
+
+command to deploy in polygon testnet (also change the private key in .secret file): 
+`npx hardhat run scripts/deploy.js --network mumbai`
+
+to run : 
+`npm run dev`
+
 ## Problem
 Ever had that feeling when your friends take credit for your jokes and re-use them to other people just seconds after you told them? May be this can be a problem if your jokes are good enough to earn some dollars. 
 1. As mentioned above the benefits of memes are tons but it will be difficult for a dedicated meme creator to generate income even though memes are a part of the Entertainment sector.
@@ -13,18 +29,7 @@ If the memes are mindblowing to the users and feels like rewarding them, then th
 ## How we built it
 SmileVerse is built using Next js framework as the very base of this Dapp. The smart contracts are based on Ethereum blockchain written in Solidity. The contracts are tested and deployed using Hardhat Ethereum development environment. It was deployed in localhost and later to Polygon Testnet.
 
-## How to run
-add dependencies : 
-`yarn add ethers hardhat @nomiclabs/hardhat-waffle ethereum-waffle chai @nomiclabs/hardhat-ethers web3modal @openzeppelin/contracts ipfs-http-client axios` 
 
-deploy the contracts : 
-`npx hardhat run scripts/deploy.js --network localhost`
-
-command for starting or restarting blockchain server :
-`npx hardhat node`
-
-to run : 
-`npm run dev`
 ## Authors
 
 - **Anjana K T**  - [anjanakt](https://github.com/anjana-kt)
