@@ -25,3 +25,7 @@ command for starting or restarting blockchain server :
 
 to run : 
 `npm run dev`
+## Authors
+
+- **Anjana K T**  - [anjanakt](https://github.com/anjana-kt)
+- **Anirudh A K** - [anirudh](https://github.com/AnirudhAK07)
