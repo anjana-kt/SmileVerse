@@ -4,6 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -28,15 +30,9 @@
     "autoprefixer": "^10.4.7",
     "eslint": "8.16.0",
     "eslint-config-next": "12.1.6",
+    "gh-pages": "^4.0.0",
     "postcss": "^8.4.14",
     "tailwindcss": "^3.0.24"
-  }
-  "scripts": { 
- "start": "react-scripts start",
- "predeploy": "npm run build",
- "deploy": "gh-pages -d build",
- "build": "react-scripts build",
- "test": "react-scripts test",
- "eject": "react-scripts eject"
-}
+  },
+   
 }
