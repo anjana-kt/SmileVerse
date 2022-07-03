@@ -3,8 +3,8 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 import Web3Modal from "web3modal"
 import { nftaddress, nftmarketaddress } from '../config';
-import NFT from '../artifacts/contracts/NFT.sol/NFT.json';
-import Market from '../artifacts/contracts/NFTMarket.sol/NFTMarket.json';
+import NFTabi from '../utils/NFT.json';
+import Marketabi from '../utils/NFTMarket.json';
 import Image from 'next/image';
 
 export default function Home() {
@@ -18,8 +18,8 @@ export default function Home() {
 
   async function loadNFTs(){
     const provider = new ethers.providers.JsonRpcProvider("https://matic-mumbai.chainstacklabs.com");
-    const tokenContract = new ethers.Contract(nftaddress, NFT.abi, provider);
-    const marketContract = new ethers.Contract(nftmarketaddress, Market.abi, provider);
+    const tokenContract = new ethers.Contract(nftaddress, NFTabi.abi, provider);
+    const marketContract = new ethers.Contract(nftmarketaddress, Marketabi.abi, provider);
 
     //return an array of unsold market items
     const data = await marketContract.fetchMarketItems();
